@@ -66,10 +66,12 @@ app.post('/save/:db/:collection', (req, res) => {
     });
 });
 
+// TODO: Complete PUT route.
 app.put('/', (req, res) => {
     res.json({ message: 'This method is not yet implemented' })
 });
 
+// TODO: Complete DELETE route.
 app.delete('/', (req, res) => {
     res.json({ message: 'This method is not yet implemented' })
 });
