@@ -16,7 +16,7 @@ app.listen(process.env.PORT || 5000);
 getCreds = () => {
     var appEnv = cfenv.getAppEnv();
     var credentials = appEnv.getServices().COSMO_DB_SERVICE.credentials;
-    return `mongodb://${credentials.user}:${credentials.password}@${credentials.database}.documents.azure.com:${credentials.port}/?ssl=true`;
+    return `mongodb://${credentials.user}:${credentials.password}@${credentials.user}.documents.azure.com:${credentials.port}/?ssl=true`;
 }
 
 // Method to insert documents.

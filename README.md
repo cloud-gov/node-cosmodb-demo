@@ -35,7 +35,7 @@ Bind the application to the new user-provided service instance:
 Start your application:
 
 ```
-~$ cf push node-cosmodb-demo
+~$ cf restage node-cosmodb-demo
 ```
 
 After the app starts, make sure it is running and obtain the route:
