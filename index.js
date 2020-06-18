@@ -32,6 +32,10 @@ insertDocuments = (db, collection, docs, callback) => {
     }
 }
 
+// Instantiate MongoClient.
+const url = getCreds();
+const client = new MongoClient(url);
+
 // Default GET route.
 app.get('/', (req, res) => {
     res.json({ message: 'This is a test using Node.js and Cosmo DB' })
@@ -42,9 +46,6 @@ app.post('/save/:db/:collection', (req, res) => {
 
     const dbName = req.params.db;
     const collectionName = req.params.collection;
-
-    const url = getCreds();
-    const client = new MongoClient(url);
 
     client.connect(function (err) {
         if (!err) {
@@ -63,4 +64,12 @@ app.post('/save/:db/:collection', (req, res) => {
             res.json({ error: `Could not connect: ${err.message}` });
         }
     });
+});
+
+app.put('/', (req, res) => {
+    res.json({ message: 'This method is not yet implemented' })
+});
+
+app.delete('/', (req, res) => {
+    res.json({ message: 'This method is not yet implemented' })
 });
