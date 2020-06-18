@@ -1,4 +1,4 @@
-# Node Cosmo DB Demo App
+# Node.js Cosmo DB Demo App
 
 A simple [ExpressJS](https://expressjs.com/) app demonstrating how to use [Azure's Cosmo DB](https://azure.microsoft.com/en-us/services/cosmos-db/) with cloud.gov.
 
