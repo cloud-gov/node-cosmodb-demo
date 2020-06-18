@@ -70,3 +70,9 @@ You can insert documents in your Cosmo DB instance by doing something similar to
 ```
 
 Note - You can change the `db-name` and `collection-name` segments in the route you POST to to designate with db and collection documents get stored in.
+
+## A Note on Compliance
+
+When you use cloud.gov in general, your application inherits the compliance of the [cloud.gov FedRAMP P-ATO](https://cloud.gov/docs/overview/fedramp-tracker/), which inherits compliance from the AWS GovCloud FedRAMP P-ATO.  When you use this Cosmo DB, you opt into using an Azure service that is not in the cloud.gov FedRAMP P-ATO boundary, but is in the [Azure FedRAMP boundary](https://docs.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope).
+
+You are responsible for obtaining appropriate authorization from your agency to use Cosmo DB for your system. The appropriate steps depend on your agency; they may include discussing this with your Authorizing Official and documenting it as part of your ATO (for example as part of [SC-12](https://nvd.nist.gov/800-53/Rev4/control/SC-12) or [SA-9](https://nvd.nist.gov/800-53/Rev4/control/SA-9)).
