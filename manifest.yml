@@ -1,0 +1,7 @@
+---
+applications:
+- name: node-cosmodb-demo
+  random-route: true
+  buildpacks:
+    - nodejs_buildpack
+  memory: 256M
